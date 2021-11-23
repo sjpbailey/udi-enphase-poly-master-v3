@@ -17,8 +17,7 @@ if __name__ == "__main__":
         polyglot.start()
 
         # Create the controller node
-        EnphaseController.Controller(
-            polyglot, 'controller', 'controller', 'Enphase')
+        EnphaseController(polyglot, 'controller', 'controller', 'Enphase')
 
         # Just sit and wait for events
         polyglot.runForever()
