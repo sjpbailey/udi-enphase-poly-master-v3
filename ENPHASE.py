@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Polyglot v3 node server Example 2
-Copyright (C) 2021 Robert Paauwe
+Polyglot v3 node server Enphase
+Copyright (C) 2021 Steven Bailey
 
 MIT License
 """
 import udi_interface
 import sys
 
-from nodes import irrigation_ctl
+from nodes import EnphaseController
 
 LOGGER = udi_interface.LOGGER
 
@@ -18,11 +18,10 @@ if __name__ == "__main__":
         polyglot.start()
 
         # Create the controller node
-        irrigation_ctl.Controller(polyglot, 'controller', 'controller', 'Irrigation Control')
+        EnphaseController.Controller(
+            polyglot, 'controller', 'controller', 'Control')
 
         # Just sit and wait for events
         polyglot.runForever()
     except (KeyboardInterrupt, SystemExit):
         sys.exit(0)
-        
-
