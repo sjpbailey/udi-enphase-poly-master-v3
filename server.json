@@ -1,6 +1,6 @@
 {
 	"name": "Enphase",
-	"docs": "https://github.com/UniversalDevicesInc/udi-example1-poly/README.md",
+	"docs": "https://github.com/sjpbailey/udi-enphase-poly-master-v3/README.md",
 	"type": "python3",
 	"executable": "ENPHASE.py",
 	"install": "install.sh",
@@ -21,8 +21,8 @@
 			"author": "Steve Bailey",
 			"version": "1.0.0",
 			"date": "November 21, 2021",
-			"source": "https://github.com/UniversalDevicesInc/udi-example1-poly",
-			"license": "https://github.com/UniversalDevicesInc/udi-example1-poly/LICENSE"
+			"source": "https://github.com/sjpbailey/udi-enphase-poly-master-v3",
+			"license": "https://github.com/sjpbailey/udi-enphase-poly-master-v3/LICENSE"
 		}
 	],
 	"store": {
