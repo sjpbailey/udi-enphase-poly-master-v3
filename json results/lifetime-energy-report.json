@@ -1,0 +1,19 @@
+{
+    "system_id": 2527105,
+    "start_date": "2021-11-12",
+    "production": [
+        8056,
+        15629,
+        5444,
+        6075,
+        8414,
+        22525,
+        12565
+    ],
+    "meta": {
+        "status": "normal",
+        "last_report_at": 1637367275,
+        "last_energy_at": 1637367408,
+        "operational_at": 1636749578
+    }
+}

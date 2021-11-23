@@ -1,0 +1,137 @@
+{
+    "system_id": 2527105,
+    "envoys": [
+        {
+            "sn": "202138014971",
+            "model": "IQ Envoy",
+            "sku": "X-IQ-AM1-240-3-ES"
+        }
+    ],
+    "inverters": [
+        {
+            "sn": "122052010669",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052016854",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052016859",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052018372",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052018388",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052018507",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024348",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024389",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024572",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024579",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024588",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024806",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024838",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024843",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024854",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024865",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024894",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024895",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024902",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024915",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024916",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        },
+        {
+            "sn": "122052024932",
+            "model": "IQ7AS",
+            "sku": "IQ7AS-66-ACM-US"
+        }
+    ],
+    "meters": [
+        {
+            "sn": "202138014971EIM1",
+            "manufacturer": "Enphase Energy",
+            "model": "Envoy S",
+            "status": "disabled",
+            "state": "disabled"
+        }
+    ],
+    "meta": {
+        "status": "normal",
+        "last_report_at": 1637367275,
+        "last_energy_at": 1637367408,
+        "operational_at": 1636749578
+    }
+}

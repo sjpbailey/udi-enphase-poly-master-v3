@@ -1,0 +1,13 @@
+ND-ctl-NAME = Enphase
+ND-ctl-ICON = Electrical
+ST-ctl-ST-NAME = NodeServer Online
+
+CMD-ctl-QUERY-NAME = Query
+
+ND-siteid-NAME = Site
+ND-siteid-ICON = Electrical
+ST-str-ST-NAME = Active
+ST-str-GV1-NAME = Current kW
+ST-str-GV2-NAME = kWh Today
+ST-str-GV3-NAME = kWh Life Time
+ST-str-GV4-NAME = Status

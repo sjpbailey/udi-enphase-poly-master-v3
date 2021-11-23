@@ -1,0 +1,425 @@
+[
+    {
+        "signal_strength": 5,
+        "micro_inverters": [
+            {
+                "id": 51311991,
+                "serial_number": "122052016854",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3542,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:04-08:00"
+            },
+            {
+                "id": 51311993,
+                "serial_number": "122052024572",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3432,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:54-08:00"
+            },
+            {
+                "id": 51311994,
+                "serial_number": "122052024902",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3694,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:09-08:00"
+            },
+            {
+                "id": 51311995,
+                "serial_number": "122052024838",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3667,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:29:01-08:00"
+            },
+            {
+                "id": 51311996,
+                "serial_number": "122052024348",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3603,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:11-08:00"
+            },
+            {
+                "id": 51311997,
+                "serial_number": "122052024389",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3516,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:14-08:00"
+            },
+            {
+                "id": 51311998,
+                "serial_number": "122052024865",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3640,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:15-08:00"
+            },
+            {
+                "id": 51311999,
+                "serial_number": "122052024579",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3521,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:17-08:00"
+            },
+            {
+                "id": 51312000,
+                "serial_number": "122052018372",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3677,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:20-08:00"
+            },
+            {
+                "id": 51312001,
+                "serial_number": "122052024932",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3516,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:21-08:00"
+            },
+            {
+                "id": 51312002,
+                "serial_number": "122052024915",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3428,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:27:41-08:00"
+            },
+            {
+                "id": 51312003,
+                "serial_number": "122052024806",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3624,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:28-08:00"
+            },
+            {
+                "id": 51312004,
+                "serial_number": "122052016859",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3439,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:29-08:00"
+            },
+            {
+                "id": 51312005,
+                "serial_number": "122052024843",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3711,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:30-08:00"
+            },
+            {
+                "id": 51312006,
+                "serial_number": "122052024854",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3505,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:35-08:00"
+            },
+            {
+                "id": 51312007,
+                "serial_number": "122052024588",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3649,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:27:49-08:00"
+            },
+            {
+                "id": 51312008,
+                "serial_number": "122052018388",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3562,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:37-08:00"
+            },
+            {
+                "id": 51312009,
+                "serial_number": "122052024894",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3663,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:27:53-08:00"
+            },
+            {
+                "id": 51312010,
+                "serial_number": "122052010669",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3625,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:42-08:00"
+            },
+            {
+                "id": 51312011,
+                "serial_number": "122052018507",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3547,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:43-08:00"
+            },
+            {
+                "id": 51312012,
+                "serial_number": "122052024895",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3648,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:27:59-08:00"
+            },
+            {
+                "id": 51312013,
+                "serial_number": "122052024916",
+                "model": "IQ7AS",
+                "part_number": "800-01130-r02",
+                "sku": "IQ7AS-66-ACM-US",
+                "status": "normal",
+                "power_produced": 0,
+                "proc_load": "520-00095-r01-v04.17.01",
+                "param_table": "540-00161-r01-v04.17.02",
+                "envoy_serial_number": "202138014971",
+                "energy": {
+                    "value": 3499,
+                    "units": "Wh",
+                    "precision": 0
+                },
+                "grid_profile": "IEEE 1547 default 2015",
+                "last_report_date": "2021-11-19T16:28:00-08:00"
+            }
+        ]
+    }
+]

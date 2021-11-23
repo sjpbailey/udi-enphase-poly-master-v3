@@ -1,0 +1,33 @@
+<nodeDefs>
+
+  <nodeDef id="ctl" nodeType="139" nls="ctl">
+    <sts>
+      <st id="ST" editor="bool" />
+      <!--<st id="GV0" editor="raw" />-->
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="QUERY" />
+        <cmd id="REMOVE_NOTICES_ALL" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+  <nodeDef id="siteid" nodeType="139" nls="str">
+    <sts>
+      <st id="ST" editor="bool" />
+      <st id="GV1" editor="raw" />
+      <st id="GV2" editor="raw" />
+      <st id="GV3" editor="raw" />
+      <st id="GV4" editor="raw" />
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="SITEINFO" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+</nodeDefs>
+
