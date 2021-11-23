@@ -16,9 +16,9 @@ LOG_HANDLER.set_log_format(
     '%(asctime)s %(threadName)-10s %(name)-18s %(levelname)-8s %(module)s:%(funcName)s: %(message)s')
 
 
-class EnphaseController(udi_interface.Node):
+class Controller(udi_interface.Node):
     def __init__(self, polyglot, primary, address, name):
-        super(EnphaseController, self).__init__(
+        super(Controller, self).__init__(
             polyglot, primary, address, name)
         self.poly = polyglot
         self.name = 'Enphase Site Controller'
