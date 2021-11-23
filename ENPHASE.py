@@ -1,25 +1,27 @@
-#!/usr/bin/env python3
-"""
-Polyglot v3 node server Enphase
-Copyright (C) 2021 Steven Bailey
-
-MIT License
-"""
+#!/usr/bin/env python
+from nodes import EnphaseController
 import udi_interface
 import sys
-from nodes import EnphaseController
 
 LOGGER = udi_interface.LOGGER
 
+""" Grab My Controller Node (optional) """
+
 if __name__ == "__main__":
     try:
-        polyglot = udi_interface.Interface([])
+
+        polyglot = udi_interface.Interface([EnphaseController])
+
         polyglot.start()
 
-        # Create the controller node
-        EnphaseController(polyglot, 'controller', 'controller', 'Enphase')
+        control = EnphaseController(
+            polyglot, 'controller', 'controller', 'PythonTemplate')
 
-        # Just sit and wait for events
         polyglot.runForever()
     except (KeyboardInterrupt, SystemExit):
-        sys.exit(0)
+        LOGGER.warning("Received interrupt or exit...")
+
+        polyglot.stop()
+    except Exception as err:
+        LOGGER.error('Excption: {0}'.format(err), exc_info=True)
+    sys.exit(0)
