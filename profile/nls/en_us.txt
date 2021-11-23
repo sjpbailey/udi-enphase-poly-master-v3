@@ -2,6 +2,7 @@ ND-ctl-NAME = Enphase
 ND-ctl-ICON = Electrical
 ST-ctl-ST-NAME = NodeServer Online
 
+CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove Notices 
 CMD-ctl-QUERY-NAME = Query
 
 ND-siteid-NAME = Site
