@@ -1,7 +1,7 @@
 import requests
+from requests.auth import HTTPBasicAuth
 import json
 import logging
-from requests.auth import HTTPBasicAuth
 import udi_interface
 
 from nodes import EnphaseSite
@@ -82,7 +82,7 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        self.poly.addNode(EnphaseSite(self.poly, self.address, 'name', self.key, self.user_id, self.system_id))
+        self.poly.addNode(EnphaseSite(self.poly, self.address, 'loadcenter', 'loads', self.key, self.user_id, self.system_id))
 
     def delete(self):
         LOGGER.info('deleted.')
