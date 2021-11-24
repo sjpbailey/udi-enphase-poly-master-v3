@@ -31,11 +31,11 @@ class SiteNode(udi_interface.Node):
 
     def siteInfo(self, command):
         params = (
-            ('key'), ('user_id'), ('system_id'),
+            ('key'), ('user_id')
         )
 
         try:
-            r = requests.get(URL_SITE, 'key', 'user_id')
+            r = requests.get(URL_SITE, param=params)
 
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
