@@ -13,9 +13,9 @@ from requests.auth import HTTPBasicAuth  # HTTP
 LOGGER = udi_interface.LOGGER
 
 
-class EnphaseSiteNode(udi_interface.Node):
+class EnphaseSite(udi_interface.Node):
     def __init__(self, polyglot, primary, address, name, key, user_id, system_id):
-        super(EnphaseSiteNode, self).__init__(polyglot, primary, address, name)
+        super(EnphaseSite, self).__init__(polyglot, primary, address, name)
         self.poly = polyglot
         self.lpfx = '%s:%s' % (address, name)
         self.poly.subscribe(self.poly.START, self.start, address)
