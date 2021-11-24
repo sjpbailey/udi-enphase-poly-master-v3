@@ -68,18 +68,6 @@ class Controller(udi_interface.Node):
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
 
-    """def getInputData(self, jsonResponse):
-        #self.setDriver('GV0', float(datapoint['value']))
-        if jsonResponse != None:
-            self.setDriver('GV0', 0)  # float(jsonResponse["current_power"])
-            LOGGER.info(jsonResponse["status"])
-            self.setDriver('GV1', float(jsonResponse["status"]))
-            LOGGER.info(jsonResponse["energy_today"]/1000)
-            self.setDriver('GV2', float(jsonResponse["energy_today"]/1000))
-            LOGGER.info(jsonResponse["energy_lifetime"]/1000)
-            self.setDriver('GV3', float(
-                jsonResponse["energy_lifetime"]/1000))"""
-
     def parameterHandler(self, params):
         self.Parameters.load(params)
         LOGGER.debug('Loading parameters now')
@@ -94,7 +82,8 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        self.poly.addNode(EnphaseSite(self.poly, self.address, 'loadcenter', 'sites', self.key, self.user_id, self.system_id))
+        self.poly.addNode(EnphaseSite(self.poly, self.address,
+                          'loadcenter', self.key, self.user_id, self.system_id))
 
     def delete(self):
         LOGGER.info('deleted.')
@@ -104,13 +93,6 @@ class Controller(udi_interface.Node):
 
     def set_module_logs(self, level):
         logging.getLogger('urllib3').setLevel(level)
-
-    """# System ID:2527105
-        # url auth? 1409622241421
-
-        params = (
-            ('key', '33443540a4c162ed92df1c878e87867b'),  # 4d6a55794e7a55354d413d3d0a #
-            ('user_id', '4d6a55794e7a55354d413d3d0a'),  # 4d6a55794e7a55354d413d3d0a)"""
 
     def check_params(self):
         self.Notices.clear()

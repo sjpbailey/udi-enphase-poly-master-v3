@@ -42,3 +42,5 @@
     ],
     "next": "4e7a453d0a"
 }
+
+self.poly.addNode(EnphaseSite(self.poly, self.address, 'loadcenter', 'sites', self.key, self.user_id, self.system_id))
