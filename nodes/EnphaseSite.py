@@ -84,7 +84,7 @@ class EnphaseSite(udi_interface.Node):
 
     ]
 
-    id = 'loadcenter'
+    id = 'site'
 
     commands = {
         'SITEINFO': siteInfo

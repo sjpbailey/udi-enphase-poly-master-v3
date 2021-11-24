@@ -14,7 +14,7 @@
     </cmds>
   </nodeDef>
 
-  <nodeDef id="loadcenter" nodeType="139" nls="str">
+  <nodeDef id="site" nodeType="139" nls="str">
     <sts>
       <st id="ST" editor="bool" />
       <st id="GV1" editor="raw" />

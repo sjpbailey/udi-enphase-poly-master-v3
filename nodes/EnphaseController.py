@@ -82,7 +82,8 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        self.poly.addNode(EnphaseSite(self.poly, self.address, 'loadcenter', 'loads', self.key, self.user_id, self.system_id))
+        self.poly.addNode(EnphaseSite(self.poly, self.address,
+                          'site', 'loads', self.key, self.user_id, self.system_id))
 
     def delete(self):
         LOGGER.info('deleted.')
