@@ -25,7 +25,7 @@ class SiteNode(udi_interface.Node):
         self.system_id = system_id
 
     def start(self):
-        self.goNow(self)
+        self.siteInfo(self)
         self.http = urllib3.PoolManager()
 
     def siteInfo(self, command):
