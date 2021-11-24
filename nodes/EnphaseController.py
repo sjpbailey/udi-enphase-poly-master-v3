@@ -37,7 +37,6 @@ class Controller(udi_interface.Node):
         self.poly.updateProfile()
         self.poly.setCustomParamsDoc()
         self.discover()
-        self.getInputData()
 
     def get_request(self, url):
         params = (
