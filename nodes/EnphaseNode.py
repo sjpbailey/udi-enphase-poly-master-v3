@@ -30,9 +30,7 @@ class SiteNode(udi_interface.Node):
 
     def siteInfo(self, command):
         params = (
-            ('key'),  # '33443540a4c162ed92df1c878e87867b'),
-            ('user_id')  # , '4d6a55794e7a55354d413d3d0a'),
-            ('system_id')  # , '2527105'
+            ('key', 'user_id', 'system_id')
         )
 
         try:
