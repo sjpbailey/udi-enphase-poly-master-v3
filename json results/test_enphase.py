@@ -23,8 +23,9 @@ print('\n Lifetime Energy Daily Report \n' + response2)"""
 # for loop looking at system id to add Systems
 response3 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems',  params=params).text
-#print( response3)
+print(response3)
 systemResponse = json.loads(response3)
+
 print('\n System ID \n', systemResponse["systems"][0]["system_id"])
 print('\n System Status \n', systemResponse["systems"][0]["status"])
 print('\n System Country \n', systemResponse["systems"][0]["country"])
@@ -52,7 +53,7 @@ response6 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params).text  # for loop for solar array
 print('\n Inverters \n' + response6)"""
 
-response = requests.get(
+"""response = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/2527105/summary',  params=params)
 #print('\n Summary \n' + response)
 jsonResponse = json.loads(response.text)
@@ -62,7 +63,7 @@ print('\n System kW \n', jsonResponse["current_power"])
 print('\n System kWh \n', jsonResponse["energy_today"]/1000)
 print('\n System Status \n', jsonResponse["status"])
 print('\n System kWh Today\n', jsonResponse["energy_today"]/1000)
-print('\n System kWh Life Time\n', jsonResponse["energy_lifetime"]/1000)
+print('\n System kWh Life Time\n', jsonResponse["energy_lifetime"]/1000)"""
 
 # print(int(jsonResponse["current_power"]))
 
