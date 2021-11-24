@@ -4,7 +4,7 @@ import json
 import logging
 import udi_interface
 
-from nodes import EnphaseSite
+from nodes import EnphaseNode
 
 LOGGER = udi_interface.LOGGER
 LOG_HANDLER = udi_interface.LOG_HANDLER
@@ -82,8 +82,10 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        self.poly.addNode(EnphaseSite(self.poly, self.address,
-                          'site', 'loads', self.key, self.user_id, self.system_id))
+        node = EnphaseNode.SiteNode(self.poly, self.address,
+                                    'site', 'loads', self.key, self.user_id, self.system_id)
+        self.poly.addNode(node)
+        # node = pool_zone.PoolNode(self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc )
 
     def delete(self):
         LOGGER.info('deleted.')
