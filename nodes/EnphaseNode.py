@@ -35,7 +35,7 @@ class SiteNode(udi_interface.Node):
         )
 
         try:
-            r = requests.get(URL_SITE, param=params)
+            r = requests.get(URL_SITE, params=params)
 
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
