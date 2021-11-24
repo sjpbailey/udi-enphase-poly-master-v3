@@ -5,8 +5,8 @@ ST-ctl-ST-NAME = NodeServer Online
 CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove Notices 
 CMD-ctl-QUERY-NAME = Query
 
-ND-siteid-NAME = Site
-ND-siteid-ICON = Electrical
+ND-loadcenter-NAME = Site
+ND-loadcenter-ICON = Electrical
 ST-str-ST-NAME = Active
 ST-str-GV1-NAME = Current kW
 ST-str-GV2-NAME = kWh Today
