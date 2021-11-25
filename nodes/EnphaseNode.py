@@ -77,7 +77,7 @@ class SiteNode(udi_interface.Node):
         {'driver': 'GV1', 'value': 0, 'uom': 56},
         {'driver': 'GV2', 'value': 0, 'uom': 25},
         {'driver': 'GV3', 'value': 0, 'uom': 56},
-        {'driver': 'GV4', 'value': 0, 'uom': 2},
+        {'driver': 'GV4', 'value': 0, 'uom': 25},
 
     ]
 
