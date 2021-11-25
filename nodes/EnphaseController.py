@@ -47,7 +47,7 @@ class Controller(udi_interface.Node):
 
         try:
             r = requests.get(
-                'https://api.enphaseenergy.com/api/v2/systems/system_id/systems',  params=params)
+                'https://api.enphaseenergy.com/api/v2/systems/'+self.system_id+'/systems',  params=params)
 
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
