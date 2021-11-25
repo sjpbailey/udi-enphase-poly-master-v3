@@ -30,7 +30,7 @@ class SiteNode(udi_interface.Node):
 
     def siteInfo(self, command):
         URL_SITE = 'https://api.enphaseenergy.com/api/v2/systems/2527105/summary'
-        params = (('key'), ('user_id'),)
+        params = (('key', self.key), ('user_id', self.user_id))
 
         try:
             r = requests.get(URL_SITE, params=params)
