@@ -12,3 +12,5 @@ ST-str-GV1-NAME = Current kW
 ST-str-GV2-NAME = kWh Today
 ST-str-GV3-NAME = kWh Life Time
 ST-str-GV4-NAME = Status
+
+CMD-str-SITEINFO-NAME = Update Information
