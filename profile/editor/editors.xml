@@ -4,7 +4,7 @@
 		<range uom="2" subset="0,1"/>
 	</editor>
 	<editor id="stat">
-		<range uom="25" subset="0,1" nls="NORMAL" />
+		<range uom="56" />
 	</editor>
 	<editor id="raw">
 		<range uom="56" min="-1000000" max="1000000" prec="0" />
