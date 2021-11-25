@@ -88,7 +88,6 @@ class Controller(udi_interface.Node):
         node = EnphaseNode.SiteNode(self.poly, self.address,
                                     'site', 'loads', self.key, self.user_id, self.system_id)
         self.poly.addNode(node)
-        # node = pool_zone.PoolNode(self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc )
 
     def delete(self):
         LOGGER.info('deleted.')
