@@ -11,7 +11,6 @@ import requests
 from requests.auth import HTTPBasicAuth  # HTTP
 
 LOGGER = udi_interface.LOGGER
-URL_SITE = 'https://api.enphaseenergy.com/api/v2/systems/"system_id"/summary'
 
 
 class SiteNode(udi_interface.Node):
@@ -29,7 +28,8 @@ class SiteNode(udi_interface.Node):
         self.siteInfo(self)
         self.http = urllib3.PoolManager()
 
-    def siteInfo(self, command, url):
+    def siteInfo(self, command):
+        URL_SITE = 'https://api.enphaseenergy.com/api/v2/systems/"system_id"/summary'
         params = (('key'), ('user_id'),)
 
         try:
