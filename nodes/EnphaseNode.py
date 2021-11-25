@@ -1,10 +1,8 @@
 
 import udi_interface
-import sys
-import time
+from datetime import datetime, timedelta
 import json
 import urllib3
-import asyncio
 import logging
 
 import requests
@@ -34,15 +32,14 @@ class SiteNode(udi_interface.Node):
 
         try:
             r = requests.get(URL_SITE, params=params)
-
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
 
             LOGGER.info(Response["current_power"])
             self.setDriver('GV1', float(Response["current_power"]/1000))
-            LOGGER.info(Response["current_power"])
+            LOGGER.info(Response["current_kWh"]/1000)
             self.setDriver('GV2', float(Response["energy_today"]/1000))
-            LOGGER.info(Response["current_power"])
+            LOGGER.info(Response["energy_lifetime"]/1000)
             self.setDriver('GV3', float(Response["energy_lifetime"]/1000))
             LOGGER.info(Response["status"])
             self.setDriver('GV4', str(Response["status"]))
@@ -51,7 +48,39 @@ class SiteNode(udi_interface.Node):
                 self.setDriver('ST', 1)
             else:
                 self.setDriver('ST', 0)
+        except requests.exceptions.RequestException as e:
+            LOGGER.error("Error: " + str(e))
 
+    def siteHist(self, command):
+        presentday = datetime.now()
+        yesterday = presentday - timedelta(1)
+        start_date = yesterday.strftime('%Y-%m-%d')
+        end_date = presentday.strftime('%Y-%m-%d')
+        LOGGER.info(start_date)
+        LOGGER.info(end_date)
+        URL_HIST = 'https://api.enphaseenergy.com/api/v2/systems/2527105/energy_lifetime?start_date=' + \
+            start_date+'&end_date='+end_date
+        params = (('key', self.key), ('user_id', self.user_id))
+
+        try:
+            r = requests.get(URL_HIST, params=params)
+            #print('\n Summary \n' + response)
+            Response = json.loads(r.text)
+
+            LOGGER.info(Response)
+            self.setDriver('GV5', float(Response/1000))
+
+            # LOGGER.info(Response["current_power"])
+            #self.setDriver('GV2', float(Response["energy_today"]/1000))
+            # LOGGER.info(Response["current_power"])
+            #self.setDriver('GV3', float(Response["energy_lifetime"]/1000))
+            # LOGGER.info(Response["status"])
+            #self.setDriver('GV4', str(Response["status"]))
+
+            if r.status_code == 200:
+                self.setDriver('ST', 1)
+            else:
+                self.setDriver('ST', 0)
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
 
@@ -72,6 +101,7 @@ class SiteNode(udi_interface.Node):
         {'driver': 'GV2', 'value': 0, 'uom': 56},
         {'driver': 'GV3', 'value': 0, 'uom': 56},
         {'driver': 'GV4', 'value': 0, 'uom': 25},
+        {'driver': 'GV5', 'value': 0, 'uom': 56},
 
     ]
 
