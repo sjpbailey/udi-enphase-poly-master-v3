@@ -48,14 +48,14 @@ class SiteNode(udi_interface.Node):
             self.setDriver('GV4', str(Response["status"]))
 
             # url, auth=HTTPBasicAuth)
-            if r.status_code == requests.codes.ok:
-                if self.debug_enable == 'True' or self.debug_enable == 'true':
-                    LOGGER.info(r.content)
+            # if r.status_code == requests.codes.ok:
+            #    if self.debug_enable == 'True' or self.debug_enable == 'true':
+            #        LOGGER.info(r.content)
 
-                return r.content
-            else:
-                LOGGER.error("get_request:  " + r.content)
-                return None
+            #    return r.content
+            # else:
+            #    LOGGER.error("get_request:  " + r.content)
+            #    return None
 
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
