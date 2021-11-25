@@ -6,8 +6,8 @@
 	"install": "install.sh",
 	"description": "Enphase Solae Site Summary with micro inverter inventory per customer site.",
 	"notice": "",
-	"shortPoll": "600",
-	"longPoll": "1500",
+	"shortPoll": "880",
+	"longPoll": "66000",
 	"logLevel": "WARNING",
 	"profile_version": "1.0.0",
 	"customParams": {
