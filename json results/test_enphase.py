@@ -55,9 +55,9 @@ print('\n Equipment Stats \n' + response5)
 response6 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params).text  # for loop for solar array
 print('\n Inverters \n' + response6)"""
-
+system_id = '2527105'
 response = requests.get(
-    'https://api.enphaseenergy.com/api/v2/systems/2527105/summary',  params=params)
+    'https://api.enphaseenergy.com/api/v2/systems/' + system_id + '/summary',  params=params)
 #print('\n Summary \n' + response)
 jsonResponse = json.loads(response.text)
 
