@@ -47,6 +47,7 @@ class SiteNode(udi_interface.Node):
             LOGGER.info(Response["status"])
             self.setDriver('GV4', str(Response["status"]))
 
+            # add error and status PROBABLY UN-NESSESARY
             # url, auth=HTTPBasicAuth)
             # if r.status_code == requests.codes.ok:
             #    if self.debug_enable == 'True' or self.debug_enable == 'true':
@@ -76,7 +77,7 @@ class SiteNode(udi_interface.Node):
         {'driver': 'GV1', 'value': 0, 'uom': 56},
         {'driver': 'GV2', 'value': 0, 'uom': 25},
         {'driver': 'GV3', 'value': 0, 'uom': 56},
-        {'driver': 'GV4', 'value': 0, 'uom': 25},
+        {'driver': 'GV4', 'value': 0, 'uom': 2},
 
     ]
 

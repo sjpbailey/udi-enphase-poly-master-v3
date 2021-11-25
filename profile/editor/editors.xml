@@ -1,7 +1,7 @@
 <editors>
 	<!-- Boolean -->
 	<editor id="bool">
-		<range uom="2" subset="0,1" />
+		<range uom="2" subset="0,1" nls="NORMAL" />
 	</editor>
 	<editor id="raw">
 		<range uom="56" min="-1000000" max="1000000" prec="0" />
