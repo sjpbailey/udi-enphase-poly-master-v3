@@ -47,16 +47,10 @@ class SiteNode(udi_interface.Node):
             LOGGER.info(Response["status"])
             self.setDriver('GV4', str(Response["status"]))
 
-            # add error and status PROBABLY UN-NESSESARY
-            # url, auth=HTTPBasicAuth)
-            # if r.status_code == requests.codes.ok:
-            #    if self.debug_enable == 'True' or self.debug_enable == 'true':
-            #        LOGGER.info(r.content)
-
-            #    return r.content
-            # else:
-            #    LOGGER.error("get_request:  " + r.content)
-            #    return None
+            if r.status_code == 200:
+                self.setDriver('ST', 1)
+            else:
+                self.setDriver('ST', 0)
 
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
