@@ -29,7 +29,7 @@ class SiteNode(udi_interface.Node):
         self.siteInfo(self)
         self.http = urllib3.PoolManager()
 
-    def siteInfo(self, url, command):
+    def siteInfo(self, command, url):
         params = (('key'), ('user_id'),)
 
         try:
