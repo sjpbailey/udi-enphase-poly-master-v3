@@ -38,11 +38,15 @@ class Controller(udi_interface.Node):
         self.poly.setCustomParamsDoc()
         self.discover()
 
+    # key '33443540a4c162ed92df1c878e87867b'),
+    # user_id '4d6a55794e7a55354d413d3d0a'),
+    # system_id '2527105'
+
     def get_request(self, url):
         params = (
-            ('key', self.key),  # '33443540a4c162ed92df1c878e87867b'),
-            ('user_id', self.user_id)  # , '4d6a55794e7a55354d413d3d0a'),
-            ('system_id', self.system_id)  # , '2527105'
+            ('key', self.key),
+            ('user_id', self.user_id),
+            ('system_id', self.system_id),
         )
 
         try:
