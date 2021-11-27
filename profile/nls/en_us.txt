@@ -14,8 +14,6 @@ ST-str-GV5-NAME = kWh Yesterday
 ST-str-GV3-NAME = kWh Life Time
 ST-str-GV4-NAME = Status
 
-
-
 CMD-str-SITEINFO-NAME = Update Information
 
 NORMAL-1 = Normal

@@ -86,9 +86,9 @@ print('\n Equipment Stats \n' + response5)"""
 response6 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params).text  # for loop for solar array
 print('\n Inverters \n' + response6)
-for i in response6["micro_inverters"]:  # inverter_summary
-    inverters = str(["micro_inverters"])
-    print(inverters)    # inverter
+# for i in response6["micro_inverters"]:  # inverter_summary
+#    inverters = str(["micro_inverters"])
+#    print(inverters)    # inverter
 
 system_id = '2527105'
 response = requests.get(
