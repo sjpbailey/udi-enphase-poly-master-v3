@@ -29,13 +29,10 @@ class SiteNode(udi_interface.Node):
     def siteInfo(self, command):
         URL_SITE = 'https://api.enphaseenergy.com/api/v2/systems/'+self.system_id + '/summary'
         params = (('key', self.key), ('user_id', self.user_id))
-
         try:
             r = requests.get(URL_SITE, params=params)
-
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
-
             LOGGER.info(Response["current_power"])
             self.setDriver('GV1', float(Response["current_power"]/1000))
             LOGGER.info(Response["current_power"])
@@ -43,13 +40,15 @@ class SiteNode(udi_interface.Node):
             LOGGER.info(Response["current_power"])
             self.setDriver('GV3', float(Response["energy_lifetime"]/1000))
             LOGGER.info(Response["status"])
-            self.setDriver('GV4', str(Response["status"]))
-
+            Response["status"] = 'normal'
+            if 'normal' is 'normal':
+                self.setDriver('GV4', 1)
+            else:
+                self.setDriver('GV4', 0)
             if r.status_code == 200:
                 self.setDriver('ST', 1)
             else:
                 self.setDriver('ST', 0)
-
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
 

@@ -51,14 +51,14 @@ response8 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/2527105/consumption_lifetimeconsumption_lifetime',  params=params).text
 print('\n rgm \n' + response8)"""
 
-"""# Customers Systems = system_id
+# Customers Systems = system_id
 # for loop looking at system id to add Systems
 response3 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems', params=params).text  # params=params
 # print(response3)
 systemResponse = json.loads(response3)
-
-#print('\n System ID \n', systemResponse["systems"][0]["system_id"])
+print(systemResponse)
+print('\n System ID \n', systemResponse["systems"][0]["system_id"])
 #print('\n System Status \n', systemResponse["systems"][0]["status"])
 #print('\n System Country \n', systemResponse["systems"][0]["country"])
 hellohere = systemResponse["systems"][0]
@@ -67,13 +67,13 @@ hellohere = systemResponse["systems"][0]
 # print(hellohere["system_id"])
 #howlong = len(hellohere["system_id"])
 # print(howlong)
-for i in hellohere:
-    print('\n', i,  hellohere[i])
+# for i in hellohere:
+#    print('\n', i,  hellohere[i])
 
-    #'system_id' in hellohere.values()
-    #print(i, hellohere[i])
+#'system_id' in hellohere.values()
+#print(i, hellohere[i])
 
-# energy_lifetime?start_date=2013-01-01&end_date=2013-01-06"""
+# energy_lifetime?start_date=2013-01-01&end_date=2013-01-06
 
 """response4 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/2527105/inventory',  params=params).text
@@ -83,14 +83,14 @@ print('\n Equipmet Inventory \n' + response4)"""
     'https://api.enphaseenergy.com/api/v2/systems/2527105/stats?datetime_format=iso8601',  params=params).text
 print('\n Equipment Stats \n' + response5)"""
 
-response6 = requests.get(
+"""response6 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params).text  # for loop for solar array
 print('\n Inverters \n' + response6)
 for i in response6["micro_inverters"]:  # inverter_summary
     inverters = str(["micro_inverters"])
     print(inverters)    # inverter
 
-"""system_id = '2527105'
+system_id = '2527105'
 response = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/' + system_id + '/summary',  params=params)
 #print('\n Summary \n' + response)
