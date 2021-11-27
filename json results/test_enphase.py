@@ -16,7 +16,7 @@ params = (('key', key), ('user_id', user_id))
 """response = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params)  # 'https://api.enphaseenergy.com/api/v2/systems', # https://enlighten.enphaseenergy.com/app_user_auth/new?app_id=1409622241421 # https://api.enphaseenergy.com/api/v2/systems/[system_id]/stats
 # https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=1409622241421
-print(response)"""
+print(response)
 
 presentday = datetime.now()
 yesterday = presentday - timedelta(1)
@@ -46,10 +46,10 @@ response4 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/2527105/energy_lifetime?start_date='+end_tird+'&end_date='+end_tird,  params=params).text
 #print('\n Lifetime Energy Daily Report \n' + response4)
 
-"""# gives 401 is no consumption meter
+# gives 401 is no consumption meter
 response8 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/2527105/consumption_lifetimeconsumption_lifetime',  params=params).text
-print('\n rgm \n' + response8)"""
+print('\n rgm \n' + response8)
 
 # Customers Systems = system_id
 # for loop looking at system id to add Systems
@@ -57,7 +57,7 @@ response3 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems', params=params).text  # params=params
 # print(response3)
 systemResponse = json.loads(response3)
-print(systemResponse)
+print(systemResponse["systems"][0]["status"])
 print('\n System ID \n', systemResponse["systems"][0]["system_id"])
 #print('\n System Status \n', systemResponse["systems"][0]["status"])
 #print('\n System Country \n', systemResponse["systems"][0]["country"])
@@ -71,7 +71,7 @@ hellohere = systemResponse["systems"][0]
 #    print('\n', i,  hellohere[i])
 
 #'system_id' in hellohere.values()
-#print(i, hellohere[i])
+#print(i, hellohere[i])"""
 
 # energy_lifetime?start_date=2013-01-01&end_date=2013-01-06
 
@@ -88,7 +88,7 @@ print('\n Equipment Stats \n' + response5)"""
 print('\n Inverters \n' + response6)
 for i in response6["micro_inverters"]:  # inverter_summary
     inverters = str(["micro_inverters"])
-    print(inverters)    # inverter
+    print(inverters)    # inverter"""
 
 system_id = '2527105'
 response = requests.get(

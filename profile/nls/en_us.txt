@@ -18,5 +18,5 @@ ST-str-GV4-NAME = Status
 
 CMD-str-SITEINFO-NAME = Update Information
 
-NORMAL-0 = Normal
-NORMAL-1 = Fault
+NORMAL-1 = Normal
+NORMAL-0 = Fault
