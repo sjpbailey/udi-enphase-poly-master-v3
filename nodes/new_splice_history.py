@@ -1,5 +1,5 @@
 
-def siteHist(self, command):
+"""def siteHist(self, command):
     presentday = datetime.now()
     yesterday = presentday - timedelta(1)
     start_date = yesterday.strftime('%Y-%m-%d')
@@ -30,4 +30,4 @@ def siteHist(self, command):
             else:
                 self.setDriver('ST', 0)
         except requests.exceptions.RequestException as e:
-            LOGGER.error("Error: " + str(e))
+            LOGGER.error("Error: " + str(e))"""
