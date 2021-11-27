@@ -83,12 +83,12 @@ print('\n Equipmet Inventory \n' + response4)"""
     'https://api.enphaseenergy.com/api/v2/systems/2527105/stats?datetime_format=iso8601',  params=params).text
 print('\n Equipment Stats \n' + response5)"""
 
-"""response6 = requests.get(
+response6 = requests.get(
     'https://api.enphaseenergy.com/api/v2/systems/inverters_summary_by_envoy_or_site?site_id=2527105',  params=params).text  # for loop for solar array
 print('\n Inverters \n' + response6)
 for i in response6["micro_inverters"]:  # inverter_summary
     inverters = str(["micro_inverters"])
-    print(inverters)    # inverter"""
+    print(inverters)    # inverter
 
 system_id = '2527105'
 response = requests.get(

@@ -41,7 +41,7 @@ class SiteNode(udi_interface.Node):
             self.setDriver('GV3', float(Response["energy_lifetime"]/1000))
             LOGGER.info(Response["status"])
             normal1 = Response["status"]
-            if normal1 is 'normal':
+            if normal1 == 'normal':
                 self.setDriver('GV4', 1)
             else:
                 self.setDriver('GV4', 0)
