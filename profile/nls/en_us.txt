@@ -10,7 +10,7 @@ ND-site-ICON = Electrical
 ST-str-ST-NAME = Active
 ST-str-GV1-NAME = Current kW
 ST-str-GV2-NAME = kWh Today
-ST-str-GV5-NAME = kWh Yesterday
+#ST-str-GV5-NAME = kWh Yesterday
 ST-str-GV3-NAME = kWh Life Time
 ST-str-GV4-NAME = Status
 
