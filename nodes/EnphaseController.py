@@ -55,12 +55,9 @@ class Controller(udi_interface.Node):
         try:
             r = requests.get(
                 'https://api.enphaseenergy.com/api/v2/systems/'+self.system_id+'/systems',  params=params)
-
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
-
             LOGGER.info('\n System ID \n', Response["systems"][0]["system_id"])
-
             # url, auth=HTTPBasicAuth)
             # if r.status_code == requests.codes.ok:
             #    if self.debug_enable == 'True' or self.debug_enable == 'true':
@@ -70,7 +67,6 @@ class Controller(udi_interface.Node):
             # else:
             #    LOGGER.error("get_request:  " + r.content)
             #    return None
-
         except requests.exceptions.RequestException as e:
             LOGGER.error("Error: " + str(e))
 
@@ -88,10 +84,7 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        if self.key is not self.default_key:
-            node = EnphaseNode.SiteNode(self.poly, self.address,
-                                        'site', 'loads', self.key, self.user_id, self.system_id)
-            self.poly.addNode(node)
+        pass
 
     def delete(self):
         LOGGER.info('deleted.')
@@ -128,6 +121,11 @@ class Controller(udi_interface.Node):
             LOGGER.error('check_params: system_id not defined in customParams, please add it.  Using {}'.format(
                 default_system_id))
             self.system_id = default_system_id
+
+        if self.key != default_key:
+            node = EnphaseNode.SiteNode(self.poly, self.address,
+                                        'site', 'loads', self.key, self.user_id, self.system_id)
+            self.poly.addNode(node)
 
         # Add a notice if they need to change the user/user_id from the default.
         if self.key == default_key or self.user_id == default_user_id or self.system_id == default_system_id:
