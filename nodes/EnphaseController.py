@@ -85,7 +85,7 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        if self.key is not None:
+        if self.key is not 'default_key':
             node = EnphaseNode.SiteNode(self.poly, self.address,
                                         'site', 'loads', self.key, self.user_id, self.system_id)
             self.poly.addNode(node)
