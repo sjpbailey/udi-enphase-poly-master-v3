@@ -36,7 +36,6 @@
 1. Polyglot V3.
 2. ISY firmware 5.3.x or later
 3. Requests
-4. json
 
 # Release Notes
 
