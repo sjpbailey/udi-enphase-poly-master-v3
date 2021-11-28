@@ -32,6 +32,9 @@ class Controller(udi_interface.Node):
         self.poly.subscribe(self.poly.CUSTOMPARAMS, self.parameterHandler)
         self.poly.ready()
         self.poly.addNode(self)
+        self.default_key = "YourApiKey"
+        self.default_user_id = "YourUser_id"
+        self.default_system_id = "YourSystem_id"
 
     def start(self):
         self.poly.updateProfile()
@@ -85,7 +88,7 @@ class Controller(udi_interface.Node):
             nodes[node].reportDrivers()
 
     def discover(self, *args, **kwargs):
-        if self.key is not 'default_key':
+        if self.key is not self.default_key:
             node = EnphaseNode.SiteNode(self.poly, self.address,
                                         'site', 'loads', self.key, self.user_id, self.system_id)
             self.poly.addNode(node)
