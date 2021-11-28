@@ -1,5 +1,5 @@
 
-# Enphase Node Server (c) 2021 Steven Bailey
+# Enphase Solar Version 1 Node Server (c) 2021 Steven Bailey
 
 ![Enphase](<https://github.com/sjpbailey/udi-enphase-poly-master-v3/blob/master/images-archive/enlighten_dev_logo-8c066a4e2ed24faf.png>)
 
@@ -7,11 +7,21 @@
 
 * Node Server for Enphase solar inverter system.
 
-## Installation
+## Future
+
+* This first version is for a single system ID.
+* Futre versions will include:
+* Auto system ID for multiple systems arrarys.
+* Inverter Summary with output kW and accumulated kWh.
+* Consumption Status with comsumption Meter.
+* Storage and comercial metering.
 
 ### Node Settings
 
-The settings for this node are:
+* The settings for this node are:
+* key = enter your api key
+* user_id = enter your api user ID
+* system_id = enter your system ID
 
 #### Short Poll
 
