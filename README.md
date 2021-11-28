@@ -1,7 +1,7 @@
 
 # Enphase Node Server (c) 2021 Steven Bailey
 
-<https://github.com/sjpbailey/udi-enphase-poly-master-v3/blob/master/images-archive/enlighten_dev_logo-8c066a4e2ed24faf.png>
+![Enphase](<https://github.com/sjpbailey/udi-enphase-poly-master-v3/blob/master/images-archive/enlighten_dev_logo-8c066a4e2ed24faf.png>)
 
 * Node Server for Enphase solar inverter system.
 
