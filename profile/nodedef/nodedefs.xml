@@ -17,9 +17,9 @@
   <nodeDef id="site" nodeType="139" nls="str">
     <sts>
       <st id="ST" editor="bool" />
-      <st id="GV1" editor="raw" />
-      <st id="GV2" editor="raw" />
-      <st id="GV3" editor="raw" />
+      <st id="GV1" editor="kw" />
+      <st id="GV2" editor="kwh" />
+      <st id="GV3" editor="kwh" />
       <st id="GV4" editor="stat" />
       <!--<st id="GV5" editor="raw" />-->
 

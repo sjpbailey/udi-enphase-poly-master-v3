@@ -1,4 +1,8 @@
-
+"""
+Polyglot v3 node server
+Copyright (C) 2021 Steven Bailey
+MIT License
+"""
 import udi_interface
 from datetime import datetime, timedelta
 import json
@@ -34,11 +38,14 @@ class SiteNode(udi_interface.Node):
             #print('\n Summary \n' + response)
             Response = json.loads(r.text)
             LOGGER.info(Response["current_power"])
+            # Currently produced kW
             self.setDriver('GV1', float(Response["current_power"]/1000))
             LOGGER.info(Response["current_power"])
+            # Todays Current kWh
             self.setDriver('GV2', float(Response["energy_today"]/1000))
             LOGGER.info(Response["current_power"])
-            self.setDriver('GV3', float(Response["energy_lifetime"]/1000))
+            self.setDriver('GV3', float(
+                Response["energy_lifetime"]/1000))  # Lifetime kWh
             LOGGER.info(Response["status"])
             normal1 = Response["status"]
             if normal1 == 'normal':
@@ -65,9 +72,9 @@ class SiteNode(udi_interface.Node):
 
     drivers = [
         {'driver': 'ST', 'value': 0, 'uom': 2},
-        {'driver': 'GV1', 'value': 0, 'uom': 56},
-        {'driver': 'GV2', 'value': 0, 'uom': 56},
-        {'driver': 'GV3', 'value': 0, 'uom': 56},
+        {'driver': 'GV1', 'value': 0, 'uom': 30},  # Current kW
+        {'driver': 'GV2', 'value': 0, 'uom': 33},  # Todays kWh
+        {'driver': 'GV3', 'value': 0, 'uom': 33},  # Life Time kWh
         {'driver': 'GV4', 'value': 0, 'uom': 25},
 
     ]

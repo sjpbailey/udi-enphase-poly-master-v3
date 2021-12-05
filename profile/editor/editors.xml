@@ -6,7 +6,10 @@
 	<editor id="stat">
 		<range uom="25" subset="0,1" nls="NORMAL"/>
 	</editor>
-	<editor id="raw">
-		<range uom="56" min="-1000000" max="1000000" prec="0" />
+	<editor id="kw">
+		<range uom="30" min="-1000000" max="1000000" prec="0" />
+	</editor>
+	<editor id="kwh">
+		<range uom="30" min="-1000000" max="1000000" prec="0" />
 	</editor>
 </editors>
