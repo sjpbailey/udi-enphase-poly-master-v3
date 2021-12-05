@@ -3,6 +3,7 @@ Polyglot v3 node server
 Copyright (C) 2021 Steven Bailey
 MIT License
 """
+
 import requests
 from requests.auth import HTTPBasicAuth
 import json
