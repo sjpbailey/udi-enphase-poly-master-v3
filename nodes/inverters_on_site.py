@@ -19,7 +19,7 @@ response = requests.get(
 jsonData = json.loads(response)
 
 print()
-print(jsonData[0]['micro_inverters'][1])
+# print(jsonData[0]['micro_inverters'][1])
 
 df = pd.json_normalize(jsonData[0]['micro_inverters'])
 df = df.fillna(-1)
@@ -44,8 +44,8 @@ for device in device_list:
 print()
 # print(df['id'])
 # print(df['serial_number'])
-# print(df['energy.value'])
-# print(df['power_produced'])
+print(df['energy.value'])
+print(df['power_produced'])
 
 # For file grab
 # f.close()
