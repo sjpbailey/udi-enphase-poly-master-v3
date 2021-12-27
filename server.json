@@ -9,7 +9,7 @@
 	"shortPoll": "600",
 	"longPoll": "6600",
 	"logLevel": "WARNING",
-	"profile_version": "1.0.1",
+	"profile_version": "1.0.2",
 	"customParams": {
 		"key": "YourApiKey",
 		"user_id": "YourUser_id",
@@ -19,7 +19,7 @@
 		{
 			"title": "Enphase Solar",
 			"author": "Steve Bailey",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"date": "November 21, 2021",
 			"source": "https://github.com/sjpbailey/udi-enphase-poly-master-v3",
 			"license": "https://github.com/sjpbailey/udi-enphase-poly-master-v3/LICENSE"

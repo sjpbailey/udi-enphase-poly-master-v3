@@ -9,6 +9,7 @@ import udi_interface
 import sys
 
 from nodes import EnphaseController
+from nodes import EnphaseNode
 
 LOGGER = udi_interface.LOGGER
 
